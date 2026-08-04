@@ -41,6 +41,7 @@
     jack.enable = true;
   };
   services.libinput.enable = true;
+  services.udisks2.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
@@ -84,6 +85,7 @@
     olympus
     pipes
     prismlauncher
+    udiskie
     vesktop
     vscode-fhs
     wget
