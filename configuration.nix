@@ -76,6 +76,8 @@
 
   environment.systemPackages = with pkgs; [
     btop
+    cava
+    cmatrix
     fastfetch
     hyfetch
     kdePackages.dolphin
@@ -85,6 +87,7 @@
     olympus
     pipes
     prismlauncher
+    spotify
     udiskie
     vesktop
     vscode-fhs
