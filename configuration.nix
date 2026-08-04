@@ -55,21 +55,27 @@
   ];
 
   programs = {
+    dms-shell.enable = true;
+    dms-shell.systemd.enable = true;
+    firefox.enable = true;
+    fish.enable = true;
+    git = {
+      enable = true;
+      config = [
+        { user.email = "song.johan.2007@gmail.com"; }
+        { user.name = "jsdev"; }
+      ];
+    };
+    niri.enable = true;
     nh = {
       enable = true;
       flake = "/home/jsong/nixos";
     };
-    firefox.enable = true;
-    fish.enable = true;
-    niri.enable = true;
-    dms-shell.enable = true;
-    dms-shell.systemd.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
     btop
     fastfetch
-    git
     hyfetch
     kitty
     lumafly
