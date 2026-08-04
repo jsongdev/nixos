@@ -80,6 +80,7 @@
     kitty
     lumafly
     neovim
+    nnn
     olympus
     pipes
     prismlauncher
