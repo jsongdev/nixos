@@ -77,10 +77,10 @@
     btop
     fastfetch
     hyfetch
+    kdePackages.dolphin
     kitty
     lumafly
     neovim
-    nnn
     olympus
     pipes
     prismlauncher
