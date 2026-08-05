@@ -83,8 +83,10 @@
     cava
     cmatrix
     fastfetch
+    fishPlugins.bass
     hyfetch
     kdePackages.dolphin
+    kdePackages.qt6ct
     kitty
     lumafly
     neovim
