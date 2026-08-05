@@ -87,7 +87,7 @@
     olympus
     pipes
     prismlauncher
-    spotify
+    spotify-player
     udiskie
     vesktop
     vscode-fhs
