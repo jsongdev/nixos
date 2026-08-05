@@ -98,7 +98,7 @@
     neovim
     olympus
     pipes
-    playerctlp
+    playerctl
     prismlauncher
     rustup
     spotify-player
