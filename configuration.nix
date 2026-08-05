@@ -79,6 +79,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    brightnessctl
     btop
     cava
     cmatrix
@@ -92,6 +93,7 @@
     neovim
     olympus
     pipes
+    playerctl
     prismlauncher
     rustup
     spotify-player
