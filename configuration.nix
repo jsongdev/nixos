@@ -45,6 +45,9 @@
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = false;
+    General.Experimental = true;
+    General.FastConnectable = true;
+    Policy.AutoEnable = true;
   };
   
   nixpkgs.config.allowUnfree = true;
@@ -93,7 +96,7 @@
     neovim
     olympus
     pipes
-    playerctl
+    playerctlp
     prismlauncher
     rustup
     spotify-player
