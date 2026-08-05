@@ -42,7 +42,11 @@
   };
   services.libinput.enable = true;
   services.udisks2.enable = true;
-
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = false;
+  };
+  
   nixpkgs.config.allowUnfree = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   
