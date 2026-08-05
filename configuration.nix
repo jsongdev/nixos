@@ -83,6 +83,7 @@
     cava
     cmatrix
     fastfetch
+    gcc
     hyfetch
     kdePackages.dolphin
     kdePackages.qt6ct
