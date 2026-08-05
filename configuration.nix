@@ -94,6 +94,7 @@
     prismlauncher
     spotify-player
     udiskie
+    unzip
     vesktop
     vscode-fhs
     wget
