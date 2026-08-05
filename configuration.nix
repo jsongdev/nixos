@@ -92,6 +92,7 @@
     olympus
     pipes
     prismlauncher
+    rustup
     spotify-player
     udiskie
     unzip
