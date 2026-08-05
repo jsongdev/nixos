@@ -49,7 +49,7 @@
       Experimental = true;
       FastConnectable = true;
     };
-    Policy.AutoEnable = true;
+    settings.Policy.AutoEnable = true;
   };
   
   nixpkgs.config.allowUnfree = true;
