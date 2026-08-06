@@ -7,6 +7,7 @@
   };
 
   services.xserver.videoDrivers = [ "amdgpu" "nvidia" ];
+  
   hardware.nvidia = {
     modesetting.enable = true;
     open = true;
@@ -21,7 +22,7 @@
       nvidiaBusId = "PCI:1:0:0";
       amdgpuBusId = "PCI:53:0:0";
     };
-  }
+  };
 
   programs.steam = {
     enable = true;
