@@ -90,6 +90,7 @@
     cmatrix
     fastfetch
     gcc
+    heroic
     hyfetch
     kdePackages.dolphin
     kdePackages.qt6ct
