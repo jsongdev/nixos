@@ -101,6 +101,7 @@
     pipes
     playerctl
     prismlauncher
+    protonplus
     rustup
     spotify-player
     udiskie
