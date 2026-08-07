@@ -116,6 +116,7 @@
     kdePackages.dolphin
     kdePackages.qt6ct
     kitty
+    koodo-reader
     lumafly
     neovim
     olympus
