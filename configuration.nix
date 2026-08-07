@@ -86,6 +86,7 @@
   environment.systemPackages = with pkgs; [
     brightnessctl
     btop
+    calibre
     cava
     cmatrix
     fastfetch
@@ -116,7 +117,6 @@
     kdePackages.dolphin
     kdePackages.qt6ct
     kitty
-    koodo-reader
     lumafly
     neovim
     olympus
