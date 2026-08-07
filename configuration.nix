@@ -114,6 +114,7 @@
     gparted
     heroic
     hyfetch
+    jdk
     kdePackages.dolphin
     kdePackages.qt6ct
     kitty
