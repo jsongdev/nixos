@@ -124,6 +124,7 @@
     pipes
     playerctl
     prismlauncher
+    qt6ct-kde
     rustup
     spotify-player
     udiskie
