@@ -28,9 +28,9 @@ services.displayManager.dms-greeter = {
     customConfig = ''
     '';
   };
-  configHome = "/home/yourusername";
+  configHome = "/home/jsong";
   configFiles = [
-    "/home/yourusername/.config/DankMaterialShell/settings.json"
+    "/home/jsong/.config/DankMaterialShell/settings.json"
   ];
   logs = {
     save = true; 
