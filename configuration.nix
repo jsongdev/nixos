@@ -22,10 +22,21 @@
     layout = "us";
     variant = "";
   };
-
-  services.displayManager.dms-greeter = {
-  enable = true;
-  compositor.name = "niri";
+services.displayManager.dms-greeter = {
+  compositor = {
+    name = "niri";
+    customConfig = ''
+    '';
+  };
+  configHome = "/home/yourusername";
+  configFiles = [
+    "/home/yourusername/.config/DankMaterialShell/settings.json"
+  ];
+  logs = {
+    save = true; 
+    path = "/tmp/dms-greeter.log";
+  };
+  quickshell.package = pkgs.quickshell;
 };
 
   users.users."jsong" = {
