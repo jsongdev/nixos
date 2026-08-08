@@ -112,6 +112,7 @@
     )
     gcc
     gparted
+    greetd
     heroic
     hyfetch
     jdk
