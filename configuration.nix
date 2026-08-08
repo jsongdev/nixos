@@ -23,6 +23,11 @@
     variant = "";
   };
 
+  services.displayManager.dms-greeter = {
+  enable = true;
+  compositor.name = "niri";
+};
+
   users.users."jsong" = {
     isNormalUser = true;
     description = "Joanne Song";
