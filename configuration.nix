@@ -106,6 +106,7 @@ services.displayManager.dms-greeter = {
     cava
     cmatrix
     fastfetch
+    feh
     (
       let
         base = pkgs.appimageTools.defaultFhsEnvArgs;
