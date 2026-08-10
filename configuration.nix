@@ -102,7 +102,7 @@ services.displayManager.dms-greeter = {
   environment.systemPackages = with pkgs; [
     brightnessctl
     btop
-    calibre
+    # calibre
     cava
     cmatrix
     fastfetch
