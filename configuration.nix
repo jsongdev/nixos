@@ -139,6 +139,7 @@ services.displayManager.dms-greeter = {
     lumafly
     neovim
     olympus
+    onlyoffice-desktopeditors
     pipes
     playerctl
     prismlauncher
