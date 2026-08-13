@@ -97,6 +97,7 @@ services.displayManager.dms-greeter = {
       enable = true;
       flake = "/home/jsong/nixos";
     };
+    obs-studio.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
