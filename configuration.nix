@@ -137,6 +137,7 @@ services.displayManager.dms-greeter = {
     kdePackages.dolphin
     kdePackages.qt6ct
     kitty
+    krita
     lumafly
     neovim
     olympus
