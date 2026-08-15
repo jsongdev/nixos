@@ -135,6 +135,7 @@ services.displayManager.dms-greeter = {
     hyfetch
     jdk
     kdePackages.dolphin
+    kdePackages.kolourpaint
     kdePackages.qt6ct
     kitty
     krita
