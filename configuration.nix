@@ -146,6 +146,7 @@ services.displayManager.dms-greeter = {
     pipes
     playerctl
     prismlauncher
+    qalculate-qt
     rustup
     spotify-player
     udiskie
