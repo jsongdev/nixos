@@ -5,7 +5,6 @@
     [
       ./hardware-configuration.nix
       ./steam.nix
-      inputs.ilya-fedin.nixosModules.qt6ct
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -103,11 +102,6 @@ services.displayManager.dms-greeter = {
   };
 
   environment.etc."xdg/menus/applications.menu".source = "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
-  qt.enable = true;
-  qt.platformTheme = "qt5ct";
-environment.sessionVariables = {
-  QT_QPA_PLATFORMTHEME = "kde";
-};
   environment.systemPackages = with pkgs; [
     brightnessctl
     btop
@@ -143,7 +137,17 @@ environment.sessionVariables = {
     jdk
     kdePackages.dolphin
     kdePackages.kolourpaint
-    kdePackages.qt6ct
+    (kdePackages.qt6ct.overrideAttrs (oldAttrs: {
+      buildInputs = (oldAttrs.buildInputs or [ ]) ++ (with kdePackages; [
+        kcolorscheme
+        kconfig
+        kiconthemes
+        qtdeclarative
+      ]);
+      nativeBuildInputs = (oldAttrs.nativeBuildInputs or [ ]) ++ [
+        kdePackages.extra-cmake-modules
+      ];
+    }))
     kitty
     krita
     lumafly
