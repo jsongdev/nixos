@@ -99,6 +99,7 @@ services.displayManager.dms-greeter = {
       flake = "/home/jsong/nixos";
     };
     obs-studio.enable = true;
+    qt.enable = true;
   };
 
   environment.etc."xdg/menus/applications.menu".source = "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
@@ -137,7 +138,7 @@ services.displayManager.dms-greeter = {
     jdk
     kdePackages.dolphin
     kdePackages.kolourpaint
-    kdePackages.qtsvg
+    kdePackages.qt6ct
     kitty
     krita
     lumafly
