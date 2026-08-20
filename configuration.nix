@@ -101,10 +101,11 @@ services.displayManager.dms-greeter = {
     obs-studio.enable = true;
   };
 
+  environment.etc."xdg/menus/applications.menu".source = "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
+
   environment.systemPackages = with pkgs; [
     brightnessctl
     btop
-    # calibre
     cava
     cmatrix
     fastfetch
@@ -138,6 +139,7 @@ services.displayManager.dms-greeter = {
     kdePackages.dolphin
     kdePackages.kolourpaint
     kdePackages.qt6ct
+    kdePackages.qtsvg
     kitty
     krita
     lumafly
