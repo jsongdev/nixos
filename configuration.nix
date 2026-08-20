@@ -59,6 +59,7 @@ services.displayManager.dms-greeter = {
   };
   services.libinput.enable = true;
   services.udisks2.enable = true;
+  services.gvfs.enable = true;
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = false;
@@ -100,7 +101,7 @@ services.displayManager.dms-greeter = {
     };
     obs-studio.enable = true;
   };
-  environment.etc."xdg/menus/applications.menu".source = "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
+  #environment.etc."xdg/menus/applications.menu".source = "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
   environment.systemPackages = with pkgs; [
     brightnessctl
     btop
@@ -134,7 +135,6 @@ services.displayManager.dms-greeter = {
     heroic
     hyfetch
     jdk
-    kdePackages.dolphin
     kdePackages.kolourpaint
     kitty
     krita
