@@ -138,7 +138,7 @@ services.displayManager.dms-greeter = {
     jdk
     kdePackages.dolphin
     kdePackages.kolourpaint
-    kdePackages.qt6ct
+    (kdePackages.qt6ct.override { kdeSupport = true; })
     kdePackages.qtsvg
     kitty
     krita
@@ -160,8 +160,6 @@ services.displayManager.dms-greeter = {
     wget
     xwayland-satellite
   ];
-kdePackages.qt6ct.package = pkgs.kdePackages.qt6ct.override { kdeSupport = true; }
-    
   nix.settings.experimental-features = ["nix-command" "flakes"];
   system.stateVersion = "26.05"; #Don't Touch
 }
