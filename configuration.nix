@@ -71,7 +71,6 @@ services.displayManager.dms-greeter = {
   
   nixpkgs.config.allowUnfree = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
-  environment.sessionVariables.QT_QPA_PLATFORMTHEME = "qt6ct";
   
   swapDevices = [{
     device = "/var/lib/swapfile";
@@ -103,7 +102,8 @@ services.displayManager.dms-greeter = {
   };
   qt.enable = true;
   environment.etc."xdg/menus/applications.menu".source = "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
-  environment.systemPackages = with pkgs; [
+ environment.sessionVariables.QT_QPA_PLATFORMTHEME = "qt5ct";
+   environment.systemPackages = with pkgs; [
     brightnessctl
     btop
     cava
@@ -138,7 +138,14 @@ services.displayManager.dms-greeter = {
     jdk
     kdePackages.dolphin
     kdePackages.kolourpaint
+    kdePackages.qtstyleplugin-kvantum
+    libsForQt5.qt5ct
+    libsForQt5.qtstyleplugin-kvantum
     (kdePackages.qt6ct.overrideAttrs (oldAttrs: {
+      name = "qt6ct-kde"
+      patches = (oldAttrs.patches or [ ]) ++ [
+        ./qt6ct-0.11.patch
+      ]
       buildInputs = (oldAttrs.buildInputs or [ ]) ++ (with kdePackages; [
         kcolorscheme
         kconfig
