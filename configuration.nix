@@ -5,7 +5,7 @@
     [
       ./hardware-configuration.nix
       ./steam.nix
-      nur-no-pkgs.repos.ilya-fedin.modules.qt6ct;
+      nur-no-pkgs.repos.ilya-fedin.modules.qt6ct
     ];
 
   boot.loader.systemd-boot.enable = true;
