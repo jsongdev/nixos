@@ -142,10 +142,10 @@ services.displayManager.dms-greeter = {
     libsForQt5.qt5ct
     libsForQt5.qtstyleplugin-kvantum
     (kdePackages.qt6ct.overrideAttrs (oldAttrs: {
-      name = "qt6ct-kde"
+      name = "qt6ct-kde";
       patches = (oldAttrs.patches or [ ]) ++ [
         ./qt6ct-0.11.patch
-      ]
+      ];
       buildInputs = (oldAttrs.buildInputs or [ ]) ++ (with kdePackages; [
         kcolorscheme
         kconfig
