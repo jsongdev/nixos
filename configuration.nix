@@ -139,7 +139,7 @@ services.displayManager.dms-greeter = {
     kdePackages.dolphin
     kdePackages.kolourpaint
     kdePackages.qt6ct
-    (kdePackages.qt6ct.override { kdeSupport = true; })
+    kdePackages.qt6ct = kdePackages.qt6ct.override { kdeSupport = true; }
     kdePackages.qtsvg
     kitty
     krita
