@@ -60,6 +60,7 @@ services.displayManager.dms-greeter = {
   services.libinput.enable = true;
   services.udisks2.enable = true;
   services.gvfs.enable = true;
+  services.playerctld.enable = true;
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = false;
