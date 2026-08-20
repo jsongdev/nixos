@@ -71,6 +71,7 @@ services.displayManager.dms-greeter = {
   
   nixpkgs.config.allowUnfree = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  environment.sessionVariables.QT_QPA_PLATFORMTHEME = "qt6ct";
   
   swapDevices = [{
     device = "/var/lib/swapfile";
