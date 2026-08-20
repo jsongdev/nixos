@@ -1,8 +1,8 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    inputs.ilya-fedin.url = "github:ilya-fedin/nur-repository";
-    inputs.ilya-fedin.inputs.nixpkgs.follows = "nixpkgs";
+    ilya-fedin.url = "github:ilya-fedin/nur-repository";
+    ilya-fedin.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, nixpkgs, ... } @inputs: {
