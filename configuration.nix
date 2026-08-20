@@ -102,7 +102,6 @@ services.displayManager.dms-greeter = {
   };
 
   environment.etc."xdg/menus/applications.menu".source = "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
-
   environment.systemPackages = with pkgs; [
     brightnessctl
     btop
@@ -138,7 +137,6 @@ services.displayManager.dms-greeter = {
     jdk
     kdePackages.dolphin
     kdePackages.kolourpaint
-   (pkgs.kdePackages.qt6ct.override { kdeSupport = true; })
     kdePackages.qtsvg
     kitty
     krita
@@ -160,6 +158,7 @@ services.displayManager.dms-greeter = {
     wget
     xwayland-satellite
   ];
+  kdePackages.qt6ct.override { kdeSupport = true; }
   nix.settings.experimental-features = ["nix-command" "flakes"];
   system.stateVersion = "26.05"; #Don't Touch
 }
