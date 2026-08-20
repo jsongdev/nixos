@@ -103,6 +103,8 @@ services.displayManager.dms-greeter = {
   };
 
   environment.etc."xdg/menus/applications.menu".source = "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
+  qt.enable = true;
+  qt.platformTheme = "qt5ct";
   environment.systemPackages = with pkgs; [
     brightnessctl
     btop
