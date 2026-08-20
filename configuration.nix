@@ -158,7 +158,6 @@ services.displayManager.dms-greeter = {
     wget
     xwayland-satellite
   ];
-  kdePackages.qt6ct.override { kdeSupport = true; }
   nix.settings.experimental-features = ["nix-command" "flakes"];
   system.stateVersion = "26.05"; #Don't Touch
 }
