@@ -23,6 +23,7 @@
     variant = "";
   };
 services.displayManager.dms-greeter = {
+  enable = true;
   compositor = {
     name = "niri";
     customConfig = ''
@@ -98,6 +99,7 @@ services.displayManager.dms-greeter = {
       flake = "/home/jsong/nixos";
     };
     obs-studio.enable = true;
+    quickshell.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
