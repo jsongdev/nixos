@@ -101,7 +101,7 @@ services.displayManager.dms-greeter = {
     obs-studio.enable = true;
   };
   qt.enable = true;
-  qt.platformTheme = kde;
+  qt.platformTheme = "kde";
   environment.etc."xdg/menus/applications.menu".source = "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
   environment.systemPackages = with pkgs; [
     brightnessctl
