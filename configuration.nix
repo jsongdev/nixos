@@ -139,6 +139,7 @@ services.displayManager.dms-greeter = {
     kitty
     krita
     lumafly
+    nautilus
     neovim
     olympus
     onlyoffice-desktopeditors
