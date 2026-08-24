@@ -159,6 +159,7 @@
     unzip
     vesktop
     vscode-fhs
+    wev
     wezterm
     wget
     xwayland-satellite
