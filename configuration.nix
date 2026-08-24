@@ -22,23 +22,23 @@
     layout = "us";
     variant = "";
   };
-services.displayManager.dms-greeter = {
-  enable = true;
-  compositor = {
-    name = "niri";
-    customConfig = ''
-    '';
+  services.displayManager.dms-greeter = {
+    enable = true;
+    compositor = {
+      name = "niri";
+      customConfig = ''
+      '';
+    };
+    configHome = "/home/jsong";
+    configFiles = [
+      "/home/jsong/.config/DankMaterialShell/settings.json"
+    ];
+    logs = {
+      save = true; 
+      path = "/tmp/dms-greeter.log";
+    };
+    quickshell.package = pkgs.quickshell;
   };
-  configHome = "/home/jsong";
-  configFiles = [
-    "/home/jsong/.config/DankMaterialShell/settings.json"
-  ];
-  logs = {
-    save = true; 
-    path = "/tmp/dms-greeter.log";
-  };
-  quickshell.package = pkgs.quickshell;
-};
 
   users.users."jsong" = {
     isNormalUser = true;
@@ -73,6 +73,8 @@ services.displayManager.dms-greeter = {
   
   nixpkgs.config.allowUnfree = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
+  programs.nix-ld.enable = true;
   
   swapDevices = [{
     device = "/var/lib/swapfile";
