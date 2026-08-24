@@ -140,6 +140,7 @@ services.displayManager.dms-greeter = {
     kdePackages.kolourpaint
     kitty
     krita
+    love
     lumafly
     nautilus
     neovim
