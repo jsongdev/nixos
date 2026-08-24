@@ -153,6 +153,7 @@
     pipes
     playerctl
     prismlauncher
+    python314
     rustup
     spotify-player
     udiskie
