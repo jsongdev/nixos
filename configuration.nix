@@ -133,6 +133,7 @@
         }
       )
     )
+    fuse2
     gcc
     gparted
     greetd
