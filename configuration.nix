@@ -108,7 +108,6 @@ services.displayManager.dms-greeter = {
     btop
     cava
     cmatrix
-    dotnet-sdk
     fastfetch
     feh
     (
