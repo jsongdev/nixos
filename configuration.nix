@@ -147,6 +147,7 @@
     lumafly
     nautilus
     neovim
+    nodejs
     olympus
     onlyoffice-desktopeditors
     pipes
