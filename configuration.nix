@@ -75,6 +75,8 @@
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   programs.nix-ld.enable = true;
+  services.flatpak.enable = true;
+
   
   swapDevices = [{
     device = "/var/lib/swapfile";
