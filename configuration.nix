@@ -158,6 +158,7 @@
     playerctl
     prismlauncher
     python314
+    qt6.qtimageformats
     rustup
     spotify-player
     udiskie
