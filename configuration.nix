@@ -5,6 +5,7 @@
     [
       ./hardware-configuration.nix
       ./steam.nix
+      ./dev.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -114,7 +115,6 @@
     btop
     cava
     cmatrix
-    dotnet-sdk
     fastfetch
     feh
     (
@@ -138,7 +138,6 @@
       )
     )
     fuse2
-    gcc
     gparted
     greetd
     heroic
@@ -147,24 +146,18 @@
     kdePackages.kolourpaint
     kitty
     krita
-    love
     lumafly
     nautilus
-    neovim
-    nodejs
     olympus
     onlyoffice-desktopeditors
     pipes
     playerctl
     prismlauncher
-    python314
     qt6.qtimageformats
-    rustup
     spotify-player
     udiskie
     unzip
     vesktop
-    vscode-fhs
     wev
     wezterm
     wget
