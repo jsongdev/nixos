@@ -115,7 +115,6 @@
     btop
     cava
     cmatrix
-    dgopn
     fastfetch
     feh
     (
